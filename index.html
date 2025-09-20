@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniro - Furniture Landing Page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container py-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Logo Placeholder -->
+                <img src="img/logo.png" alt="Furniro Logo" class="me-2" style="height:32px;">
+                <span class="fw-bold fs-4">Furniro</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="pages/shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#">Contact</a></li>
+                </ul>
+                <!-- Icons -->
+                <ul class="navbar-nav ms-lg-4 flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-person"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="container-fluid py-5 hero-section">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <img src="img/background.png" alt="Modern living room with furniture"
+                        class="img-fluid rounded-3 shadow-sm w-100">
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-light p-4 rounded-3 shadow-sm hero-card">
+                        <small class="text-uppercase text-muted fw-semibold">New Arrival</small>
+                        <h1 class="display-5 fw-bold mt-2 mb-3" style="color: #B88E2F;">Discover Our<br>New Collection
+                        </h1>
+                        <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                            tellus, luctus nec ullamcorper mattis.</p>
+                        <a href="pages/shop.html" class="btn btn-lg btn-primary px-4"
+                            style="background-color: #B88E2F; border: none;">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Browse The Range -->
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold mb-2">Browse The Range</h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <img src="img/browse/1.png" alt="Dining room" class="img-fluid rounded-3 mb-3">
+                        <h5 class="fw-semibold">Dining</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <img src="img/browse/2.png" alt="Living room" class="img-fluid rounded-3 mb-3">
+                        <h5 class="fw-semibold">Living</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <img src="img/browse/3.png" alt="Bedroom" class="img-fluid rounded-3 mb-3">
+                        <h5 class="fw-semibold">Bedroom</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Products -->
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold mb-2">Our Products</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Product Card Example -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/1.png" alt="Sytherine Stylish cafe chair" class="card-img-top">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">-30%</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Sytherine</h6>
+                            <p class="card-text text-muted small mb-2">Stylish cafe chair</p>
+                            <div class="fw-bold mb-1">Rp 2.500.000 <span
+                                    class="text-decoration-line-through text-muted small fw-normal">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other products (use placeholder images and adjust badges as needed) -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/2.png" alt="Leviosa Stylish cafe chair" class="card-img-top">
+                            <!-- Overlay on hover (handled in CSS) -->
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Leviosa</h6>
+                            <p class="card-text text-muted small mb-2">Stylish cafe chair</p>
+                            <div class="fw-bold mb-1">Rp 2.500.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/3.png" alt="Lolito Luxury big sofa" class="card-img-top">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">-50%</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Lolito</h6>
+                            <p class="card-text text-muted small mb-2">Luxury big sofa</p>
+                            <div class="fw-bold mb-1">Rp 7.000.000 <span
+                                    class="text-decoration-line-through text-muted small fw-normal">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/4.png" alt="Respira Outdoor bar table and stool"
+                                class="card-img-top">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">New</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Respira</h6>
+                            <p class="card-text text-muted small mb-2">Outdoor bar table and stool</p>
+                            <div class="fw-bold mb-1">Rp 500.000</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second row of products -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/5.png" alt="Grifo Night lamp" class="card-img-top">
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Grifo</h6>
+                            <p class="card-text text-muted small mb-2">Night lamp</p>
+                            <div class="fw-bold mb-1">Rp 1.500.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/6.png" alt="Muggo Small mug" class="card-img-top">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">New</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Muggo</h6>
+                            <p class="card-text text-muted small mb-2">Small mug</p>
+                            <div class="fw-bold mb-1">Rp 150.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/7.png" alt="Pingky Cute bed set" class="card-img-top">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">-50%</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Pingky</h6>
+                            <p class="card-text text-muted small mb-2">Cute bed set</p>
+                            <div class="fw-bold mb-1">Rp 7.000.000 <span
+                                    class="text-decoration-line-through text-muted small fw-normal">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="img/products/8.png" alt="Potty Minimalist flower pot" class="card-img-top">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">New</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Potty</h6>
+                            <p class="card-text text-muted small mb-2">Minimalist flower pot</p>
+                            <div class="fw-bold mb-1">Rp 500.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="pages/shop.html" class="btn btn-outline-primary px-4"
+                    style="border-color: #B88E2F; color: #B88E2F;">Show
+                    More</a>
+            </div>
+        </section>
+
+        <!-- Inspiration Section -->
+        <section class="container-fluid py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h3 class="fw-bold mb-3">50+ Beautiful rooms inspiration</h3>
+                        <p class="text-secondary mb-4">Our designer already made a lot of beautiful prototipe of rooms
+                            that inspire you</p>
+                        <a href="pages/shop.html" class="btn btn-primary px-4"
+                            style="background-color: #B88E2F; border: none;">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Carousel for inspiration images -->
+                        <div id="inspirationCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded-3 shadow-sm">
+                                <div class="carousel-item active">
+                                    <img src="img/inspire/1.png" class="d-block w-100" alt="Inspiration room 1">
+                                    <div
+                                        class="carousel-caption d-none d-md-block bg-white bg-opacity-75 rounded-3 p-3">
+                                        <small class="text-muted">01 &mdash; Bed Room</small>
+                                        <h5 class="mb-0">Inner Peace</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/inspire/2.png" class="d-block w-100" alt="Inspiration room 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/inspire/2.png" class="d-block w-100" alt="Inspiration room 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#inspirationCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#inspirationCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Section -->
+        <section class="social-section-custom py-5">
+            <div class="container-fluid px-0">
+                <div class="text-center mb-4">
+                    <h4 class="fw-bold mb-0" style="color: #222; font-size: 2rem;">
+                        Share your setup with
+                    </h4>
+                    <h2 class="fw-bold" style="color: #444; font-size: 2.5rem; letter-spacing: -1px;">
+                        #FurniroFurniture
+                    </h2>
+                </div>
+                <!-- Custom collage grid -->
+                <div class="furniro-collage d-flex flex-wrap justify-content-center align-items-center">
+                    <!-- Each image gets a custom class for sizing/positioning -->
+                    <img src="img/furn/1.png" alt="Workspace with laptop and radio" class="collage-img collage-img-1">
+                    <img src="img/furn/2.png" alt="Dining room with table and chairs" class="collage-img collage-img-2">
+                    <img src="img/furn/3.png" alt="Modern bedroom" class="collage-img collage-img-3">
+                    <img src="img/furn/4.png" alt="Sunlit brick wall dining area" class="collage-img collage-img-4">
+                    <img src="img/furn/5.png" alt="Vintage armchair" class="collage-img collage-img-5">
+                    <img src="img/furn/6.png" alt="Minimalist stools with vase and camera"
+                        class="collage-img collage-img-6">
+                    <img src="img/furn/7.png" alt="Framed art and decor" class="collage-img collage-img-7">
+                    <img src="img/furn/8.png" alt="Kitchen with geometric tiles" class="collage-img collage-img-8">
+                    <img src="img/furn/9.png" alt="Kitchen " class="collage-img collage-img-9">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Furniro.</h5>
+                    <address class="text-secondary small mb-0">
+                        400 University Drive Suite 200 Coral Gables,<br>
+                        FL 33134 USA
+                    </address>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold mb-3">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="pages/shop.html" class="text-secondary text-decoration-none">Shop</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold mb-3">Help</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">Payment Options</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Privacy Policies</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h6 class="fw-semibold mb-3">Newsletter</h6>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter Your Email Address"
+                            aria-label="Email">
+                        <button class="btn btn-primary" type="submit"
+                            style="background-color: #B88E2F; border: none;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center text-secondary small mt-4">
+                2023 Furniro. All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

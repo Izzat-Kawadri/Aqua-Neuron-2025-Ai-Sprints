@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart Sidebar Demo</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom Cart Sidebar CSS -->
+    <link rel="stylesheet" href="cart-sidebar.css">
+</head>
+
+<body class="bg-light">
+    <div class="container py-5">
+        <!-- Dummy product card with Add to Cart button -->
+        <div class="card mx-auto" style="max-width: 400px;">
+            <img src="../img/product/1.png" class="card-img-top" alt="Asgaard sofa product image">
+            <div class="card-body">
+                <h5 class="card-title">Asgaard sofa</h5>
+                <p class="card-text text-secondary">Rs. 250,000.00</p>
+                <button class="btn btn-primary w-100" id="openCartSidebarBtn">
+                    <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar Overlay -->
+    <div class="cart-sidebar-overlay" id="cartSidebarOverlay"></div>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart-sidebar" id="cartSidebar" aria-modal="true" aria-label="Shopping Cart" tabindex="-1">
+        <div class="cart-sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+            <h5 class="mb-0 fw-bold">Shopping Cart</h5>
+            <button class="btn btn-link text-dark fs-4 p-0" id="closeCartSidebarBtn" aria-label="Close cart sidebar">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <!-- Cart Items List -->
+        <ul class="list-unstyled cart-sidebar-list mb-0 px-3 py-2">
+            <li class="cart-sidebar-item d-flex align-items-center py-2 border-bottom">
+                <img src="../img/product/1.png" alt="Asgaard sofa in cart" class="cart-sidebar-thumb me-3">
+                <div class="flex-grow-1">
+                    <div class="fw-semibold">Asgaard sofa</div>
+                    <div class="d-flex align-items-center gap-2 mt-1">
+                        <div class="input-group input-group-sm cart-sidebar-qty-group" style="width: 80px;">
+                            <button class="btn btn-outline-secondary btn-sm" type="button"><i
+                                    class="bi bi-dash"></i></button>
+                            <input type="text" class="form-control text-center" value="1" style="max-width: 32px;">
+                            <button class="btn btn-outline-secondary btn-sm" type="button"><i
+                                    class="bi bi-plus"></i></button>
+                        </div>
+                        <span class="text-secondary small ms-2">Rs. 250,000.00</span>
+                    </div>
+                </div>
+                <button class="btn btn-link text-danger ms-2 p-0 cart-sidebar-remove" aria-label="Remove item">
+                    <i class="bi bi-x-circle"></i>
+                </button>
+            </li>
+            <li class="cart-sidebar-item d-flex align-items-center py-2 border-bottom">
+                <img src="../img/product/2.png" alt="Casaliving Wood in cart" class="cart-sidebar-thumb me-3">
+                <div class="flex-grow-1">
+                    <div class="fw-semibold">Casaliving Wood</div>
+                    <div class="d-flex align-items-center gap-2 mt-1">
+                        <div class="input-group input-group-sm cart-sidebar-qty-group" style="width: 80px;">
+                            <button class="btn btn-outline-secondary btn-sm" type="button"><i
+                                    class="bi bi-dash"></i></button>
+                            <input type="text" class="form-control text-center" value="1" style="max-width: 32px;">
+                            <button class="btn btn-outline-secondary btn-sm" type="button"><i
+                                    class="bi bi-plus"></i></button>
+                        </div>
+                        <span class="text-secondary small ms-2">Rs. 270,000.00</span>
+                    </div>
+                </div>
+                <button class="btn btn-link text-danger ms-2 p-0 cart-sidebar-remove" aria-label="Remove item">
+                    <i class="bi bi-x-circle"></i>
+                </button>
+            </li>
+        </ul>
+        <!-- Cart Sidebar Footer -->
+        <footer class="cart-sidebar-footer mt-auto p-3 border-top">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="fw-semibold">Subtotal</span>
+                <span class="fw-bold" id="cartSidebarSubtotal" style="color:#B88E2F;">Rs. 520,000.00</span>
+            </div>
+            <div class="d-flex gap-2">
+                <a href="../pages/cart.html" class="btn btn-outline-dark flex-fill">Cart</a>
+                <a href="#" class="btn btn-outline-dark flex-fill">Checkout</a>
+                <a href="../pages/comparison.html" class="btn btn-outline-dark flex-fill">Comparison</a>
+            </div>
+        </footer>
+    </aside>
+
+    <!-- Bootstrap 5 JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Cart Sidebar JS -->
+    <script src="../js/cart-sidebar.js"></script>
+</body>
+
+</html>

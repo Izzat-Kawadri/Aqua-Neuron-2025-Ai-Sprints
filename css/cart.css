@@ -1,0 +1,145 @@
+/* Cart Hero Banner */
+.cart-hero {
+    height: 180px;
+    position: relative;
+    background: #f9f1e7;
+    overflow: hidden;
+}
+
+.cart-hero-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+.cart-hero-overlay {
+    background: rgba(255, 255, 255, 0.7);
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+}
+
+.cart-hero .breadcrumb {
+    background: transparent;
+    font-size: 1rem;
+}
+
+/* Cart Table */
+.cart-table th,
+.cart-table td {
+    vertical-align: middle;
+    border: none;
+    background: #fff;
+}
+
+.cart-table th {
+    font-weight: 600;
+    color: #222;
+    font-size: 1.05rem;
+    background: #f9f1e7 !important;
+}
+
+.cart-thumb {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 1rem;
+    background: #f9f1e7;
+}
+
+.cart-qty-group input[type="text"] {
+    border: none;
+    background: #f9f1e7;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.cart-qty-group .btn {
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    padding: 0.25rem 0.7rem;
+}
+
+/* Cart Totals Box */
+.cart-totals-box {
+    background: #B88E2F;
+    border-radius: 1.5rem;
+
+    min-width: 260px;
+    text-align: center;
+}
+
+.cart-totals-box h5 {
+    font-size: 1.3rem;
+}
+
+.cart-totals-box .btn {
+    font-size: 1.1rem;
+    border-radius: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+/* Features Bar */
+.shop-features-bar .bi {
+    color: #B88E2F;
+}
+
+/* Footer tweaks */
+footer address {
+    line-height: 1.7;
+}
+
+footer input[type="email"] {
+    border-radius: 0.25rem 0 0 0.25rem;
+    border-right: none;
+}
+
+footer button[type="submit"] {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+
+    .cart-hero,
+    .cart-hero-img {
+        height: 120px;
+    }
+
+    .cart-thumb {
+        width: 48px;
+        height: 48px;
+    }
+
+    .cart-totals-box {
+
+        min-width: unset;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .cart-hero,
+    .cart-hero-img {
+        height: 80px;
+    }
+
+    .cart-thumb {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cart-totals-box {
+        margin-top: 1.5rem;
+        padding: 1.2rem;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        font-size: 0.97rem;
+    }
+}

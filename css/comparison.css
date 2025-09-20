@@ -1,0 +1,25 @@
+/* comparison.css */
+/* Minimal custom CSS for small adjustments */
+
+/* Active nav link highlight */
+.nav-link.active {
+    font-weight: 600;
+    color: #d4a017 !important;
+    /* brand yellow tone */
+}
+
+/* Table adjustments */
+table th,
+table td {
+    vertical-align: middle;
+}
+
+/* Footer links */
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

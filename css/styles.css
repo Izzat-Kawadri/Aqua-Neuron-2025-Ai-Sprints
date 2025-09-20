@@ -1,0 +1,535 @@
+/* Custom brand color for buttons and highlights */
+:root {
+    --furniro-gold: #B88E2F;
+}
+
+/* Hero section tweaks */
+.hero-section {
+    background: #f9f1e7;
+}
+
+/* Hero card shadow and spacing */
+.hero-card {
+    min-width: 320px;
+    max-width: 420px;
+}
+
+/* Product card overlay on hover */
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card .product-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(34, 34, 34, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    pointer-events: none;
+}
+
+.product-card:hover .product-overlay,
+.product-card:focus-within .product-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #222;
+}
+
+/* Newsletter input tweaks */
+footer input[type="email"] {
+    border-radius: 0.25rem 0 0 0.25rem;
+    border-right: none;
+}
+
+footer button[type="submit"] {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+    .hero-section .row {
+        flex-direction: column-reverse;
+    }
+
+    .hero-card {
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-card {
+        min-width: 0;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .footer .row>div {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Remove blue outline on product overlay button for better look */
+.product-overlay .btn:focus {
+    box-shadow: none;
+}
+
+/* Minor spacing for footer */
+footer address {
+    line-height: 1.7;
+}
+
+/* Social Section Collage Layout */
+.social-section-custom {
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.social-section-custom h4,
+.social-section-custom h2 {
+    color: #222;
+}
+
+.social-section-custom h2 {
+    color: #444;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.furniro-collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 700px;
+}
+
+/* Collage image base style */
+.collage-img {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    background: #222;
+    position: absolute;
+    transition: transform 0.2s;
+}
+
+/* Individual image positions and sizes (desktop, 9 images) */
+.collage-img-1 {
+    /* Top left, tall */
+    left: 0px;
+    top: 40px;
+    width: 180px;
+    height: 340px;
+    z-index: 2;
+}
+
+.collage-img-2 {
+    /* Top center left, wide */
+    left: 200px;
+    top: 0px;
+    width: 370px;
+    height: 220px;
+    z-index: 3;
+}
+
+.collage-img-3 {
+    /* Top center, square */
+    left: 590px;
+    top: 40px;
+    width: 240px;
+    height: 240px;
+    z-index: 2;
+}
+
+.collage-img-4 {
+    /* Top right, tall */
+    left: 850px;
+    top: 0px;
+    width: 260px;
+    height: 320px;
+    z-index: 2;
+}
+
+.collage-img-5 {
+    /* Bottom left, short */
+    left: 40px;
+    top: 400px;
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+
+.collage-img-6 {
+    /* Bottom center left, wide */
+    left: 220px;
+    top: 250px;
+    width: 260px;
+    height: 140px;
+    z-index: 2;
+}
+
+.collage-img-7 {
+    /* Bottom center, portrait */
+    left: 500px;
+    top: 320px;
+    width: 120px;
+    height: 180px;
+    z-index: 2;
+}
+
+.collage-img-8 {
+    /* Bottom center right, square */
+    left: 650px;
+    top: 320px;
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+
+.collage-img-9 {
+    /* Bottom right, wide */
+    left: 830px;
+    top: 340px;
+    width: 260px;
+    height: 120px;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .furniro-collage {
+        min-height: 900px;
+        max-width: 1000px;
+    }
+
+    .collage-img-1 {
+        left: 0px;
+        top: 30px;
+        width: 120px;
+        height: 220px;
+    }
+
+    .collage-img-2 {
+        left: 140px;
+        top: 0px;
+        width: 240px;
+        height: 140px;
+    }
+
+    .collage-img-3 {
+        left: 400px;
+        top: 30px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .collage-img-4 {
+        left: 560px;
+        top: 0px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .collage-img-5 {
+        left: 20px;
+        top: 270px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .collage-img-6 {
+        left: 140px;
+        top: 160px;
+        width: 140px;
+        height: 80px;
+    }
+
+    .collage-img-7 {
+        left: 300px;
+        top: 180px;
+        width: 70px;
+        height: 110px;
+    }
+
+    .collage-img-8 {
+        left: 400px;
+        top: 180px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .collage-img-9 {
+        left: 520px;
+        top: 200px;
+        width: 140px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .furniro-collage {
+        min-height: 700px;
+        max-width: 100vw;
+        gap: 8px;
+        position: static;
+    }
+
+    .collage-img {
+        position: static !important;
+        width: 48vw !important;
+        height: 28vw !important;
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+}
+
+/* Hide scrollbars for collage overflow */
+.furniro-collage {
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+}
+
+.furniro-collage::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* wrapper that centers the collage container */
+.collage-wrapper {
+    display: flex;
+    justify-content: center;
+    /* horizontally center the collage */
+    width: 100%;
+    overflow-x: auto;
+    /* allow horizontal scrolling if needed on narrow viewports */
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 12px;
+    /* small horizontal padding so images don't butt against the edges */
+    box-sizing: border-box;
+}
+
+/* Main collage container (centered by the wrapper) */
+.furniro-collage {
+    position: relative;
+    /* absolute children will be positioned relative to this */
+    display: block;
+    /* block since we're positioning children absolutely */
+    gap: 24px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    /* extra safety centering */
+    min-height: 700px;
+}
+
+/* Collage image base style */
+.collage-img {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    background: #222;
+    position: absolute;
+    transition: transform 0.2s;
+}
+
+/* Individual image positions and sizes (desktop, 9 images) */
+.collage-img-1 {
+    left: 0px;
+    top: 40px;
+    width: 180px;
+    height: 340px;
+    z-index: 2;
+}
+
+.collage-img-2 {
+    left: 200px;
+    top: 0px;
+    width: 370px;
+    height: 220px;
+    z-index: 3;
+}
+
+.collage-img-3 {
+    left: 590px;
+    top: 40px;
+    width: 240px;
+    height: 240px;
+    z-index: 2;
+}
+
+.collage-img-4 {
+    left: 850px;
+    top: 0px;
+    width: 260px;
+    height: 320px;
+    z-index: 2;
+}
+
+.collage-img-5 {
+    left: 40px;
+    top: 400px;
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+
+.collage-img-6 {
+    left: 220px;
+    top: 250px;
+    width: 260px;
+    height: 140px;
+    z-index: 2;
+}
+
+.collage-img-7 {
+    left: 500px;
+    top: 320px;
+    width: 120px;
+    height: 180px;
+    z-index: 2;
+}
+
+.collage-img-8 {
+    left: 650px;
+    top: 320px;
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+
+.collage-img-9 {
+    left: 830px;
+    top: 340px;
+    width: 260px;
+    height: 120px;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .furniro-collage {
+        min-height: 900px;
+        max-width: 1000px;
+    }
+
+    .collage-img-1 {
+        left: 0px;
+        top: 30px;
+        width: 120px;
+        height: 220px;
+    }
+
+    .collage-img-2 {
+        left: 140px;
+        top: 0px;
+        width: 240px;
+        height: 140px;
+    }
+
+    .collage-img-3 {
+        left: 400px;
+        top: 30px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .collage-img-4 {
+        left: 560px;
+        top: 0px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .collage-img-5 {
+        left: 20px;
+        top: 270px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .collage-img-6 {
+        left: 140px;
+        top: 160px;
+        width: 140px;
+        height: 80px;
+    }
+
+    .collage-img-7 {
+        left: 300px;
+        top: 180px;
+        width: 70px;
+        height: 110px;
+    }
+
+    .collage-img-8 {
+        left: 400px;
+        top: 180px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .collage-img-9 {
+        left: 520px;
+        top: 200px;
+        width: 140px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .collage-wrapper {
+        padding: 0;
+        /* full-width on small screens */
+    }
+
+    .furniro-collage {
+        min-height: 700px;
+        max-width: 100vw;
+        gap: 8px;
+        position: static;
+        /* let images flow naturally on mobile */
+    }
+
+    .collage-img {
+        position: static !important;
+        width: 48vw !important;
+        height: 28vw !important;
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+}
+
+/* Hide scrollbars for collage-wrapper overflow */
+.collage-wrapper {
+    scrollbar-width: none;
+}
+
+.collage-wrapper::-webkit-scrollbar {
+    display: none;
+}

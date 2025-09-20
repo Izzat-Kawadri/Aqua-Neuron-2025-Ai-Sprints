@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniro - Asgaard Sofa</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom Product Styles -->
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container py-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="../img/logo.png" alt="Furniro Logo" class="me-2" style="height:32px;">
+                <span class="fw-bold fs-4">Furniro</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="../pages/shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 active fw-bold" aria-current="page"
+                            href="../pages/product.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav ms-lg-4 flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-person"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="container pt-4 pb-2">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent p-0 mb-0">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-dark text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="../pages/shop.html"
+                            class="text-dark text-decoration-none">Shop</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Asgaard sofa</li>
+                </ol>
+            </nav>
+        </section>
+
+        <!-- Product Main Section -->
+        <section class="container pb-5">
+            <div class="row g-5">
+                <!-- Gallery Column -->
+                <div class="col-lg-6">
+                    <!-- Gallery: Thumbnails vertically on the left, main image on the right, both centered vertically -->
+                    <div class="d-flex flex-row align-items-center gap-4 product-gallery-wrap">
+                        <!-- Thumbnails (vertical on desktop, horizontal on mobile) -->
+                        <div class="d-flex flex-column gap-3 product-thumbs align-items-center">
+                            <img src="../img/product/1.png" alt="Asgaard sofa thumbnail 1"
+                                class="img-thumbnail product-thumb active" data-large="img/product/1.png">
+                            <img src="../img/product/2.png" alt="Asgaard sofa thumbnail 2"
+                                class="img-thumbnail product-thumb" data-large="img/product/2.png">
+                            <img src="../img/product/3.png" alt="Asgaard sofa thumbnail 3"
+                                class="img-thumbnail product-thumb" data-large="img/product/3.png">
+                            <img src="../img/product/4.png" alt="Asgaard sofa thumbnail 4"
+                                class="img-thumbnail product-thumb" data-large="img/product/4.png">
+                            <img src="../img/product/5.png" alt="Asgaard sofa thumbnail 5"
+                                class="img-thumbnail product-thumb" data-large="img/product/5.png">
+                        </div>
+                        <!-- Main Image with soft background -->
+                        <div class="flex-fill d-flex justify-content-center align-items-center">
+                            <div class="main-image-bg d-flex justify-content-center align-items-center">
+                                <img src="../img/product/1.png" alt="Asgaard sofa main image"
+                                    class="img-fluid rounded-3 shadow-sm product-main-img" id="mainProductImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Info Column -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-2">Asgaard sofa</h2>
+                    <div class="text-secondary mb-2 fs-5">Rs. 250,000.00</div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="text-warning me-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="text-secondary small">5 Customer Review</span>
+                    </div>
+                    <p class="mb-3 text-secondary small">
+                        Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                        stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs
+                        for a sound.
+                    </p>
+                    <!-- Size Options -->
+                    <div class="mb-3">
+                        <div class="fw-semibold mb-1">Size</div>
+                        <div class="btn-group" role="group" aria-label="Size options">
+                            <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off" checked>
+                            <label class="btn btn-outline-secondary px-3" for="sizeL">L</label>
+                            <input type="radio" class="btn-check" name="size" id="sizeXL" autocomplete="off">
+                            <label class="btn btn-outline-secondary px-3" for="sizeXL">XL</label>
+                            <input type="radio" class="btn-check" name="size" id="sizeXS" autocomplete="off">
+                            <label class="btn btn-outline-secondary px-3" for="sizeXS">XS</label>
+                        </div>
+                    </div>
+                    <!-- Color Options -->
+                    <div class="mb-3">
+                        <div class="fw-semibold mb-1">Color</div>
+                        <div class="d-flex gap-2">
+                            <button class="color-dot color-dot-black active" data-color="black"
+                                aria-label="Black"></button>
+                            <button class="color-dot color-dot-gold" data-color="gold" aria-label="Gold"></button>
+                            <button class="color-dot color-dot-purple" data-color="purple" aria-label="Purple"></button>
+                        </div>
+                    </div>
+                    <!-- Quantity, Add to Cart, Compare -->
+                    <div class="d-flex align-items-center gap-2 mb-4 flex-wrap">
+                        <div class="input-group quantity-group" style="width: 120px;">
+                            <button class="btn btn-outline-secondary" type="button" id="qtyMinus"><i
+                                    class="bi bi-dash"></i></button>
+                            <input type="text" class="form-control text-center" value="1" id="qtyInput"
+                                style="max-width: 40px;">
+                            <button class="btn btn-outline-secondary" type="button" id="qtyPlus"><i
+                                    class="bi bi-plus"></i></button>
+                        </div>
+                        <button class="btn btn-outline-dark px-4" id="addToCartBtn">Add To Cart</button>
+                        <button class="btn btn-outline-dark px-4">+ Compare</button>
+                    </div>
+                    <!-- Product Meta -->
+                    <div class="row g-2 text-secondary small">
+                        <div class="col-6 col-md-4">SKU: <span class="text-dark">SS001</span></div>
+                        <div class="col-6 col-md-4">Category: <span class="text-dark">Sofas</span></div>
+                        <div class="col-12 col-md-4">Tags: <span class="text-dark">Sofa, Chair, Home, Shop</span></div>
+                        <div class="col-12 mt-2">Share:
+                            <a href="#" class="text-dark ms-2"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-dark ms-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-dark ms-2"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Tabs Section -->
+        <section class="container pb-5">
+            <ul class="nav nav-tabs mb-3" id="productTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc"
+                        type="button" role="tab" aria-controls="desc" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="addinfo-tab" data-bs-toggle="tab" data-bs-target="#addinfo"
+                        type="button" role="tab" aria-controls="addinfo" aria-selected="false">Additional
+                        Information</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                        type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews [5]</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="productTabContent">
+                <div class="tab-pane fade show active" id="desc" role="tabpanel" aria-labelledby="desc-tab">
+                    <p class="text-secondary mb-4">
+                        Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn portable active stereo speaker
+                        takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the
+                        road.
+                    </p>
+                    <p class="text-secondary">
+                        Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering.
+                        Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                        stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs
+                        for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune
+                        the controls to your personal preferences while the guitar-influenced leather strap enables easy
+                        and stylish travel.
+                    </p>
+                    <div class="row g-4 mt-4">
+                        <div class="col-12 col-md-6">
+                            <div class="bg-light rounded-3 p-3 text-center">
+                                <img src="../img/sofa/2.png" alt="Sofa description image 1" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="bg-light rounded-3 p-3 text-center">
+                                <img src="../img/sofa/1.png" alt="Sofa description image 2" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="addinfo" role="tabpanel" aria-labelledby="addinfo-tab">
+                    <p class="text-secondary">Additional information about the product goes here.</p>
+                </div>
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <p class="text-secondary">Customer reviews will be displayed here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products Section -->
+        <section class="container pb-5">
+            <h3 class="fw-bold text-center mb-4">Related Products</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="../img/products/1.png" alt="Sytherine Stylish cafe chair" class="card-img-top">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">-30%</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Sytherine</h6>
+                            <p class="card-text text-muted small mb-2">Stylish cafe chair</p>
+                            <div class="fw-bold mb-1">Rp 2.500.000 <span
+                                    class="text-decoration-line-through text-muted small fw-normal">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="../img/products/2.png" alt="Leviosa Stylish cafe chair" class="card-img-top">
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Leviosa</h6>
+                            <p class="card-text text-muted small mb-2">Stylish cafe chair</p>
+                            <div class="fw-bold mb-1">Rp 2.500.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="../img/products/3.png" alt="Lolito Luxury big sofa" class="card-img-top">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">-50%</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Lolito</h6>
+                            <p class="card-text text-muted small mb-2">Luxury big sofa</p>
+                            <div class="fw-bold mb-1">Rp 7.000.000 <span
+                                    class="text-decoration-line-through text-muted small fw-normal">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="../img/products/4.png" alt="Respira Outdoor bar table and stool"
+                                class="card-img-top">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">New</span>
+                            <div class="product-overlay d-flex flex-column justify-content-center align-items-center">
+                                <button class="btn btn-sm btn-primary mb-2">Add to cart</button>
+                                <div>
+                                    <a href="#" class="text-white me-2">Share</a>
+                                    <a href="#" class="text-white me-2">Compare</a>
+                                    <a href="#" class="text-white">Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title mb-1">Respira</h6>
+                            <p class="card-text text-muted small mb-2">Outdoor bar table and stool</p>
+                            <div class="fw-bold mb-1">Rp 500.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary px-4" style="border-color: #B88E2F; color: #B88E2F;">Show
+                    More</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Furniro.</h5>
+                    <address class="text-secondary small mb-0">
+                        400 University Drive Suite 200 Coral Gables,<br>
+                        FL 33134 USA
+                    </address>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold mb-3">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="../pages/shop.html" class="text-secondary text-decoration-none">Shop</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold mb-3">Help</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">Payment Options</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Privacy Policies</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h6 class="fw-semibold mb-3">Newsletter</h6>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter Your Email Address"
+                            aria-label="Email">
+                        <button class="btn btn-primary" type="submit"
+                            style="background-color: #B88E2F; border: none;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center text-secondary small mt-4">
+                2023 Furniro. All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Product JS -->
+    <script src="../js/product.js"></script>
+</body>
+
+</html>

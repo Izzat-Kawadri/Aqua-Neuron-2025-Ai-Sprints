@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniro - Cart</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom Cart Styles -->
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container py-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="../img/logo.png" alt="Furniro Logo" class="me-2" style="height:32px;">
+                <span class="fw-bold fs-4">Furniro</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="../pages/shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="../pages/shop.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 active fw-bold" aria-current="page"
+                            href="../pages/cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav ms-lg-4 flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-person"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link p-0" href="#"><i class="bi bi-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cart Hero Banner -->
+        <section class="cart-hero position-relative">
+            <img src="../img/shop/banner.png" alt="Cart banner with furniture" class="w-100 cart-hero-img">
+            <div
+                class="cart-hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                <img src="../img/logo.png" alt="Furniro Logo" style="height:40px;" class="mb-2">
+                <h1 class="fw-bold mb-2" style="font-size:2.2rem;">Cart</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="../index.html"
+                                class="text-dark text-decoration-none">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Cart Table & Totals -->
+        <section class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-lg-8">
+                    <div class="table-responsive">
+                        <table class="table align-middle cart-table">
+                            <thead>
+                                <tr>
+                                    <th class="bg-light" style="min-width:180px;">Product</th>
+                                    <th class="bg-light" style="min-width:120px;">Price</th>
+                                    <th class="bg-light" style="min-width:120px;">Quantity</th>
+                                    <th class="bg-light" style="min-width:120px;">Subtotal</th>
+                                    <th class="bg-light"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <img src="../img/product/1.png" alt="Asgaard sofa in cart"
+                                                class="rounded-3 cart-thumb">
+                                            <span class="fw-semibold">Asgaard sofa</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-secondary">Rs. 250,000.00</td>
+                                    <td>
+                                        <div class="input-group cart-qty-group" style="width: 90px;">
+                                            <button class="btn btn-outline-secondary" type="button" id="qtyMinus"><i
+                                                    class="bi bi-dash"></i></button>
+                                            <input type="text" class="form-control text-center" value="1" id="qtyInput"
+                                                style="max-width: 36px;">
+                                            <button class="btn btn-outline-secondary" type="button" id="qtyPlus"><i
+                                                    class="bi bi-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="fw-semibold" id="cartSubtotal">Rs. 250,000.00</td>
+                                    <td>
+                                        <button class="btn btn-link text-danger p-0" id="removeItemBtn"
+                                            title="Remove item">
+                                            <i class="bi bi-trash" style="font-size:1.3rem;"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Cart Totals -->
+                <div class="col-12 col-lg-4">
+                    <div class="cart-totals-box p-4 rounded-3 bg-light">
+                        <h5 class="fw-bold mb-4">Cart Totals</h5>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-secondary">Subtotal</span>
+                            <span id="cartTotalsSubtotal">Rs. 250,000.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="fw-semibold">Total</span>
+                            <span class="fw-bold" id="cartTotalsTotal" style="color:#B88E2F;">Rs. 250,000.00</span>
+                        </div>
+                        <button class="btn btn-outline-dark w-100 py-2" id="checkoutBtn">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Features Bar -->
+        <section class="shop-features-bar py-4" style="background:#F9F1E7;">
+            <div class="container">
+                <div class="row text-center gy-3">
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-trophy fs-2 mb-2"></i>
+                        <div class="fw-semibold">High Quality</div>
+                        <div class="text-secondary small">crafted from top materials</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-shield-check fs-2 mb-2"></i>
+                        <div class="fw-semibold">Warranty Protection</div>
+                        <div class="text-secondary small">Over 2 years</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-truck fs-2 mb-2"></i>
+                        <div class="fw-semibold">Free Shipping</div>
+                        <div class="text-secondary small">Order over 150 $</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-headset fs-2 mb-2"></i>
+                        <div class="fw-semibold">24 / 7 Support</div>
+                        <div class="text-secondary small">Dedicated support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-white border-top pt-5 pb-3 mt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-12 col-md-4">
+                        <h5 class="fw-bold mb-3">Furniro.</h5>
+                        <address class="text-secondary small mb-0">
+                            400 University Drive Suite 200 Coral Gables,<br>
+                            FL 33134 USA
+                        </address>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h6 class="fw-semibold mb-3">Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="../index.html" class="text-secondary text-decoration-none">Home</a></li>
+                            <li><a href="../pages/shop.html" class="text-secondary text-decoration-none">Shop</a></li>
+                            <li><a href="../pages/shop.html" class="text-secondary text-decoration-none">Product</a>
+                            </li>
+                            <li><a href="../pages/cart.html" class="text-secondary text-decoration-none">Cart</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h6 class="fw-semibold mb-3">Help</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-secondary text-decoration-none">Payment Options</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none">Returns</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none">Privacy Policies</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h6 class="fw-semibold mb-3">Newsletter</h6>
+                        <form class="d-flex">
+                            <input type="email" class="form-control me-2" placeholder="Enter Your Email Address"
+                                aria-label="Email">
+                            <button class="btn btn-primary" type="submit"
+                                style="background-color: #B88E2F; border: none;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-center text-secondary small mt-4">
+                    2023 Furniro. All rights reserved
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Cart JS -->
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>
